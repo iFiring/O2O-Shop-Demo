@@ -1,0 +1,62 @@
+.store-detail{ width:1290px; height:auto; background-color:#CCC; margin:auto;}
+	.store-head{ width:1290px; height:30px;}
+	.store-inf{ width:1290px; height:150px; border-top:1px solid #666;}
+	.store-inf-img{ width:150px; height:150px; border-radius:75px; background-color:#F60; margin:auto;}
+	.store-goods{ width:1290px; height:auto; border-top:1px solid #666;}
+/*-filtrey-*/
+.gsort {
+	width:1290px;
+	height:auto;
+	float:left;
+	clear:both;
+	width:1290px;
+	margin:auto;
+}
+.gsort .filter {
+	float:left;
+	clear:both;
+	width:1290px;
+	padding:10px 0;
+	border-top:1px solid #666;
+	margin-right:20px;
+	background:#CCC;
+}
+.gsort .filter a {
+	float:left;
+	display:block;
+	padding:4px;
+	margin-left:10px;
+	font-size:14px;
+	color:#000;
+	border-radius:5px;
+	text-transform:uppercase;
+	outline:none;
+	text-decoration:none;
+}
+.gsort .filter .active { color:#F60;}
+.gsort .container {
+	float:left;
+	clear:both;
+	width:1290px;
+	height:auto;
+	position:relative;
+	background-color:#CCC;
+}
+.gsort .container ul {
+	display:block;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.gsort .container ul li {
+	float:left;
+	margin:0 8px 8px 0;
+	font-size:0;
+	line-height:0;
+}
+.gsort .container a {
+	display:block;
+	float:left;
+	width:192px;
+	height:192px;
+}
