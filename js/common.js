@@ -1,47 +1,90 @@
 //区域pop
-	$(function ($) {
-		//弹出选择框
-		$("#addrout").hover(function () {
-			$(this).stop().animate({opacity: '0.7'}, 500);
-		}, function () {
-			$(this).stop().animate({opacity: '1'}, 500);
-		}).on('click', function () {
-			$("body").append("<div id='mask'></div>");
-			$("#mask").addClass("mask").fadeIn("slow");
-			$(".AddrBox").fadeIn("slow");
-		});
-		//按钮的透明度
-		$("#addrsubmit").hover(function () {
-			$(this).stop().animate({opacity: '1'}, 600);
-		}, function () {
-			$(this).stop().animate({opacity: '0.8'}, 1000);
-		});
-		//文本框不允许为空---按钮触发//文本框不允许为空---单个文本触发
-		//关闭
-		$(".addrclose_btn").hover(function () { $(this).css({ color: '#FFF' }) }, function () { $(this).css({ color: '#CCC' }) }).on('click', function () {
-			$(".AddrBox").fadeOut("fast");
-			$("#mask").fadeOut("slow");
-		});
-	});
+$(function($) {
+    //弹出选择框
+    $("#addrout").hover(function() {
+        $(this).stop().animate({
+            opacity: '0.7'
+        },
+        500);
+    },
+    function() {
+        $(this).stop().animate({
+            opacity: '1'
+        },
+        500);
+    }).on('click',
+    function() {
+        $("body").append("<div id='mask'></div>");
+        $("#mask").addClass("mask").fadeIn("slow");
+        $(".AddrBox").fadeIn("slow");
+    });
+    //按钮的透明度
+    $("#addrsubmit").hover(function() {
+        $(this).stop().animate({
+            opacity: '1'
+        },
+        600);
+    },
+    function() {
+        $(this).stop().animate({
+            opacity: '0.8'
+        },
+        1000);
+    });
+    //文本框不允许为空---按钮触发//文本框不允许为空---单个文本触发
+    //关闭
+    $(".addrclose_btn").hover(function() {
+        $(this).css({
+            color: '#FFF'
+        })
+    },
+    function() {
+        $(this).css({
+            color: '#CCC'
+        })
+    }).on('click',
+    function() {
+        $(".AddrBox").fadeOut("fast");
+        $("#mask").fadeOut("slow");
+    });
+});
 //登录pop
-	$(function ($) {
-		//弹出登录
-		$("#usern").hover(function () {
-			$(this).stop().animate({opacity: '0.7'}, 500);
-		}, function () {
-			$(this).stop().animate({opacity: '1'}, 500);
-		}).on('click', function () {
-			$("body").append("<div id='mask'></div>");
-			$("#mask").addClass("mask").fadeIn("slow");
-			$(".login_Tabs").fadeIn("slow");
-		});
-		//文本框不允许为空---按钮触发//文本框不允许为空---单个文本触发
-		//关闭
-		$(".loginclose_btn").hover(function () { $(this).css({ color: '#FFF' }) }, function () { $(this).css({ color: '#CCC' }) }).on('click', function () {
-			$(".login_Tabs").fadeOut("fast");
-			$("#mask").fadeOut("slow");
-		});
-	});
+$(function($) {
+    //弹出登录
+    $("#usern").hover(function() {
+        $(this).stop().animate({
+            opacity: '0.7'
+        },
+        500);
+    },
+    function() {
+        $(this).stop().animate({
+            opacity: '1'
+        },
+        500);
+    }).on('click',
+    function() {
+        $("body").append("<div id='mask'></div>");
+        $("#mask").addClass("mask").fadeIn("slow");
+        $(".login_Tabs").fadeIn("slow");
+    });
+    //文本框不允许为空---按钮触发//文本框不允许为空---单个文本触发
+    //关闭
+    $(".loginclose_btn").hover(function() {
+        $(this).css({
+            color: '#FFF'
+        })
+    },
+    function() {
+        $(this).css({
+            color: '#CCC'
+        })
+    }).on('click',
+    function() {
+        $(".login_Tabs").fadeOut("fast");
+        $("#mask").fadeOut("slow");
+    });
+});
 //*********************************************************************************************
 //loginTabs.js
 (function ($) {
