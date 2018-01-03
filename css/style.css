@@ -1,27 +1,149 @@
 @charset "utf-8";
 /* CSS Document */
-.investment_f{ width:1290px; height:auto; margin:0;}
-.investment_f .investment_title{height:50px; width:1290px;}
-.investment_title div{ width:430px; height:50px; background-color:#FFF; float:left; margin:auto; display:inline; font-size:14px; font-weight:bold; text-align:center; line-height:50px; color:#555; cursor:pointer;}
-.investment_title #home-1{ background-image:url(../public/home-1-a.png);}
-.investment_title #home-2{ background-image:url(../public/home-2-a.png);}
-.investment_title #home-3{ background-image:url(../public/home-3-a.png);}
-.investment_title #home-1.on{ background-image:url(../public/home-1.png);}
-.investment_title #home-2.on{ background-image:url(../public/home-2.png);}
-.investment_title #home-3.on{ background-image:url(../public/home-3.png);}
-.investment_con{ clear:both; background:#fff;}
-.investment_con_list{display:none;}
+.investment_f {
+	width: 1290px;
+	height: auto;
+	margin: 0;
+}
 
-#trans { margin: 0 auto 0 auto; padding: 0; width: 1290px; height: 250px; clear:both;}
-	.slide_container { margin:0; position: relative; float: left; height:250px; width: 1290px; }
-	.slides { position: relative; overflow: hidden; height:250px; width: 1290px; padding: 0; margin: 0; z-index:2;}
-	.slide_nav { position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); top: 55%; left: 5px; opacity: 0.7; z-index: 3; text-indent: -9999px; overflow: hidden; text-decoration: none; height: 61px; width: 38px; background: transparent url("../public/trans-lr.png") no-repeat left top; margin-top: -45px; }
-	.slide_nav:active { opacity: 1.0; }
-	.slide_nav.next { left: auto; background-position: right top; right: 5px; }
-#sort{width:1290px;height:70px;margin:auto;clear:both;background-color:#FFFFFF;
-	}
-	.sorts{float:left;}
-#store{ height:auto; width:1290px; margin:auto; clear:both; background:#FFFFF; font-family:幼圆;
-	}
-	.stores{ width:312px; height:150px; float:left; margin:4px; text-align:left; background-color:#efefef; font-size:20px;}
-	.stores_img{ width:150px; height:150px; float:left;}
+.investment_f .investment_title {
+	height: 50px;
+	width: 1290px;
+}
+
+.investment_title div {
+	width: 430px;
+	height: 50px;
+	background-color: #FFF;
+	float: left;
+	margin: auto;
+	display: inline;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	color: #555;
+	cursor: pointer;
+}
+
+.investment_title #home-1 {
+	background-image: url(../public/home-1-a.png);
+}
+
+.investment_title #home-2 {
+	background-image: url(../public/home-2-a.png);
+}
+
+.investment_title #home-3 {
+	background-image: url(../public/home-3-a.png);
+}
+
+.investment_title #home-1.on {
+	background-image: url(../public/home-1.png);
+}
+
+.investment_title #home-2.on {
+	background-image: url(../public/home-2.png);
+}
+
+.investment_title #home-3.on {
+	background-image: url(../public/home-3.png);
+}
+
+.investment_con {
+	clear: both;
+	background: #fff;
+}
+
+.investment_con_list {
+	display: none;
+}
+
+#trans {
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 1290px;
+	height: 250px;
+	clear: both;
+}
+
+.slide_container {
+	margin: 0;
+	position: relative;
+	float: left;
+	height: 250px;
+	width: 1290px;
+}
+
+.slides {
+	position: relative;
+	overflow: hidden;
+	height: 250px;
+	width: 1290px;
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+}
+
+.slide_nav {
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 55%;
+	left: 5px;
+	opacity: 0.7;
+	z-index: 3;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 61px;
+	width: 38px;
+	background: transparent url("../public/trans-lr.png") no-repeat left top;
+	margin-top: -45px;
+}
+
+.slide_nav:active {
+	opacity: 1.0;
+}
+
+.slide_nav.next {
+	left: auto;
+	background-position: right top;
+	right: 5px;
+}
+
+#sort {
+	width: 1290px;
+	height: 70px;
+	margin: auto;
+	clear: both;
+	background-color: #FFFFFF;
+}
+
+.sorts {
+	float: left;
+}
+
+#store {
+	height: auto;
+	width: 1290px;
+	margin: auto;
+	clear: both;
+	background: #FFFFF;
+	font-family: 幼圆;
+}
+
+.stores {
+	width: 312px;
+	height: 150px;
+	float: left;
+	margin: 4px;
+	text-align: left;
+	background-color: #efefef;
+	font-size: 20px;
+}
+
+.stores_img {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
