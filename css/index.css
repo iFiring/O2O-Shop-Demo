@@ -13,332 +13,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 
 body {
+	padding-top: 70px; 
+	padding-bottom: 70px;
     background-color: #efefef;
 }
 
 #headline {
-    max-width: 100%;
-    width: auto;
-    height: 40px;
-    background-color: #FFF;
+    
 }
 
 #head {
-    width: 1290px;
-    height: 40px;
-    margin: auto;
-    clear: both;
     background-color: #FFF;
 }
 
 #head-1 {
-    width: 430px;
-    height: 40px;
-    float: left;
+    font-family: 幼圆;
+    font-size: 1em;
+    text-align: center;
+    color: #F60;
 }
 
 #head-2 {
-    width: 430px;
-    height: 40px;
-    float: left;
-}
-
-.addr {
-    display: block;
-    line-height: 40px;
-    font-family: 幼圆;
-    font-size: 20px;
-    height: 40px;
-    width: 430px;
-    text-align: center;
-    color: #F60;
-    cursor: pointer;
-}
-
-.AddrBox {
-    position: relative;
-    margin: auto;
-    ;background: #0CF;
-    left: -200px;
-    top: 150px;
-    width: 830px;
-    height: auto;
-    border-radius: 5px;
-    z-index: 1001;
-    display: none;
-}
-
-.addrclose {
-    padding: auto;
-    display: block;
-    text-align: center;
-    line-height: 40px;
-    height: 40px;
-    font-weight: lighter;
-    color: #FFF;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.addrclose_btn {
-    font-family: arial;
-    font-size: 30px;
-    font-weight: lighter;
-    color: #CCC;
-    text-decoration: none;
-    float: right;
-    padding-right: 6px;
-    margin-right: 6px;
-}
-
-#addrsub {
-    height: 50px;
-    width: 830px;
-    display: block;
-    line-height: 50px;
-    text-align: center;
-    margin: 10px auto;
-}
-
-#addrsubmit {
-    color: White;
-    background: #4490f7;
-    text-decoration: none;
-    padding: 10px 95px;
-    border-radius: 5px;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+    
 }
 
 #head-3 {
-    width: 430px;
-    height: 40px;
-    float: left;
-    cursor: pointer;
+    
 }
 
-#usern {
-    width: 430px;
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
-    color: #000;
-    font-family: Verdana, Geneva, sans-serif;
-}
-/*----login_Tabs-----*/
-.login_Tabs {
-    width: 850px;
-    height: auto;
-    clear: both;
-    display: none;
-    position: relative;
-    z-index: 1001;
-    left: -630px;
-    top: 150px;
-}
-
-.loginclose_btn {
-    width: 20px;
-    height: 20px;
-    float: right;
-    color: #CCC;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.horizontalTab {
-    width: 830px;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    border-radius: 5px;
-}
-
-.resp-tabs-list {
-    width: 830px;
-    height: auto;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: #eb5242;
-}
-
-.resp-tab-item {
-    border: none;
-    margin: 0;
-    color: #FFF;
-    font-size: 1em;
-    background: #ba3627;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 1.3em 0;
-    display: inline-block;
-    text-align: center;
-    list-style: none;
-    float: left;
-    width: 33.33%;
-    outline: none;
-    font-family: 'Raleway', sans-serif;
-    transition: all 0.3s ease-out;
-    font-weight: 600;
-}
-
-.resp-tab-active {
-    background: #eb5242;
-    text-shadow: none;
-    color: #fff;
-}
-
-.resp-tabs-container {
-    width: 829px;
-    padding: 0px;
-    background-color: #fff;
-    clear: left;
-}
-
-h2.resp-accordion {
-    cursor: pointer;
-    padding: 5px;
-    display: none;
-    font-size: 1em;
-    margin: 0px;
-    padding: 10px 15px;
-    background: #C5CDD1;
-    margin: 10px 0;
-    color: #FFF;
-}
-
-h2.resp-accordion:hover {
-    background: #FE2232;
-    text-shadow: none;
-    color: #FFF;
-}
-
-.resp-tab-content {
-    display: none;
-}
-/*----register----*/
-.register {
-    padding: 4% 4% 5% 4%;
-    background: #eb5242;
-    margin: auto;
-}
-
-.register p {
-    font-size: 1.1em;
-    color: #fff;
-    padding: 1em 0;
-    font-weight: 400;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-}
-
-.register div {
-    width: 100%;
-}
-
-.register input[type="text"],.register input[type="password"] {
-    width: 95%;
-    padding: 0.8em 0.8em;
-    color: #fff;
-    font-size: 15px;
-    outline: none;
-    background: none;
-    font-weight: 500;
-    border: 1px solid rgba(186, 40, 23, 0.69);
-    font-family: 'Raleway', sans-serif;
-}
-
-.ricode {
-    width: 100px;
-    float: left;
-}
-
-.sendicode {
-}
-
-.sign-up {
-    padding: 1.2em 0;
-}
-
-.login-sub input[type="submit"] {
-    float: right;
-    background: #A12112;
-    padding: 0.8em 1.5em;
-    color: #fff;
-    font-weight: 400;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 1em;
-    transition: 0.1s all;
-    -webkit-transition: 0.1s all;
-    -moz-transition: 0.1s all;
-    -o-transition: 0.1s all;
-    font-family: 'Raleway', sans-serif;
-}
-/*-----login----------*/
-.login {
-    padding: 4% 4% 5% 4%;
-    background: #eb5242;
-}
-
-.login input[type="text"],.login input[type="password"] {
-    width: 87.9%;
-    padding: 1em 1em 0.9em 3em;
-    color: #999;
-    font-size: 17px;
-    outline: none;
-    font-weight: 400;
-    border: none;
-    border: 1px solid #fff;
-    margin: 0.8em 0;
-    background: url("../public/mail.png")no-repeat 10px 16px #fff;
-}
-
-.login input[type="password"] {
-    background: url("../public/lock.png")no-repeat 10px 15px #fff;
-}
-
-.submit-to {
-    float: right;
-}
-/*----findpassword----*/
-.findpw {
-    padding: 4% 4% 5% 4%;
-    background: #eb5242;
-}
-
-.sub {
-    padding: 1em 0;
-}
-
-.sub p {
-    font-size: 1em;
-    color: #fff;
-    padding: 1em 0;
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
-    text-align: left;
-}
-
-.sub input[type="text"] {
-    width: 95%;
-    padding: 0.8em 0.8em;
-    color: #fff;
-    font-size: 15px;
-    outline: none;
-    background: none;
-    font-weight: 500;
-    border: 1px solid rgba(186, 40, 23, 0.69);
-    font-family: 'Raleway', sans-serif;
-}
-
-.findpw-sub {
-    text-align: left;
-}
 
 .mask {
     margin: 0;
@@ -356,53 +58,55 @@ h2.resp-accordion:hover {
     display: none;
 }
 
-.investment_title {
-    height: 50px;
-    width: 1290px;
-    margin: auto;
-    clear: both;
+.footer_bar {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	background-color: #EFEFEF;
 }
 
-.investment_title div {
-    width: 430px;
-    height: 50px;
-    float: left;
-    margin: auto;
-    display: inline;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 50px;
-    color: #555;
-    cursor: pointer;
+.footer_bar_flex{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
-.investment_title #home-1 {
+.footer_bar_flex div {
+	min-height: 50px;
+	min-width: 50px;
+	background: no-repeat;
+}
+
+.footer_bar_flex #home-1 {
     background-image: url(../public/home-1-a.png);
 }
 
-.investment_title #home-1.on {
+.footer_bar_flex #home-1.on {
     background-image: url(../public/home-1.png);
 }
 
-.investment_title #home-2 {
+.footer_bar_flex #home-2 {
     background-image: url(../public/home-2-a.png);
 }
 
-.investment_title #home-2.on {
+.footer_bar_flex #home-2.on {
     background-image: url(../public/home-2.png);
 }
 
-.investment_title #home-3 {
+.footer_bar_flex #home-3 {
     background-image: url(../public/home-3-a.png);
 }
 
-.investment_title #home-3.on {
+.footer_bar_flex #home-3.on {
     background-image: url(../public/home-3.png);
 }
 
 .investment_con {
-    width: 1290px;
+    
     height: auto;
     clear: both;
     background: #fff;
@@ -410,75 +114,26 @@ h2.resp-accordion:hover {
 }
 
 .investment_con_list {
-    width: 1290px;
-    height: 780px;
+    width: auto;
+    height: auto;
     display: none;
     text-align: center;
 }
-/******首页******/
-#trans {
-    margin: 0 auto 0 auto;
-    padding: 0;
-    width: 1290px;
-    height: 250px;
-    clear: both;
-}
-
-.slide_container {
-    margin: 0;
-    position: relative;
-    float: left;
-    height: 250px;
-    width: 1290px;
-}
-
-.slides {
-    position: relative;
-    overflow: hidden;
-    height: 250px;
-    width: 1290px;
-    padding: 0;
-    margin: 0;
-    z-index: 2;
-}
-
-.slide_nav {
-    position: absolute;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    top: 55%;
-    left: 5px;
-    opacity: 0.7;
-    z-index: 3;
-    text-indent: -9999px;
-    overflow: hidden;
-    text-decoration: none;
-    height: 61px;
-    width: 38px;
-    background: transparent url("../public/trans-lr.png") no-repeat left top;
-    margin-top: -45px;
-}
-
-.slide_nav:active {
-    opacity: 1.0;
-}
-
-.slide_nav.next {
-    left: auto;
-    background-position: right top;
-    right: 5px;
-}
 
 .sfilter {
-    width: 1290px;
+    
     height: auto;
     margin: auto;
     position: relative;
 } /* smenu */
 .smenu {
-    width: 1290px;
-    height: 70px;
+    width: 100%;
+    height: auto;
     cursor: pointer;
     background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .smenu div {
@@ -584,16 +239,18 @@ h2.resp-accordion:hover {
 }
 
 .sitem {
-    width: 1290px;
+	width: 100%;
     height: auto;
-    float: left;
+    min-height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .sitem div {
     width: 320px;
     height: 150px;
-    margin-left: 2px;
-    margin-top: 2px;
+    margin: 4px;
     float: left;
     background-color: #CCC;
     overflow: hidden;
@@ -607,7 +264,7 @@ h2.resp-accordion:hover {
 }
 
 #storepop {
-    width: 1290px;
+    
     height: auto;
     position: absolute;
     z-index: 520;
@@ -620,7 +277,7 @@ h2.resp-accordion:hover {
 }
 
 .popinf-close {
-    width: 1290px;
+    
     height: auto;
     float: left;
     background: #FFF;
@@ -651,7 +308,7 @@ h2.resp-accordion:hover {
 }
 
 .store-inf {
-    width: 1290px;
+    
     height: 150px;
     border-top: 1px solid #999;
     margin: auto;
@@ -670,13 +327,13 @@ h2.resp-accordion:hover {
 
 .container {
     font-family: Helvetica, Arial, Verdana;
-    width: 1290px;
+    
     height: auto;
     margin: auto;
 }
 
 #filters {
-    width: 1290px;
+    
     height: 20px;
     list-style: none;
 }
@@ -699,7 +356,7 @@ h2.resp-accordion:hover {
 }
 
 #portfoliolist {
-    width: 1290px;
+    
     height: auto;
     float: left;
 }
@@ -741,7 +398,7 @@ h2.resp-accordion:hover {
 }
 
 .gsort {
-    width: 1290px;
+    
     height: 600px;
     margin: auto;
     float: left;
@@ -750,7 +407,7 @@ h2.resp-accordion:hover {
 }
 /******购物车页******/
 .gwc {
-    width: 1290px;
+    
     overflow: hidden;
 }
 
@@ -888,7 +545,7 @@ h2.resp-accordion:hover {
 }
 /*******账户页*******/
 .count_inf {
-    width: 1290px;
+    width: 100%;
     height: 150px;
     float: left;
 }
@@ -902,9 +559,11 @@ h2.resp-accordion:hover {
 }
 
 .count_control {
-    width: 1290px;
-    height: 630px;
-    float: left;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .control_block {
@@ -920,23 +579,6 @@ h2.resp-accordion:hover {
     cursor: pointer;
 }
 
-#article {
-    height: auto;
-    width: 1290px;
-    margin: auto;
-    clear: both;
-    font-family: 幼圆;
-}
-
-.articles {
-    width: 312px;
-    height: 100px;
-    float: right;
-    margin: 4px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
 .headline {
     margin: 0 auto 0 auto;
     font-size: 20px;
@@ -948,15 +590,14 @@ h2.resp-accordion:hover {
     margin-top: 6px;
 }
 
-#button {
+#buttom {
     height: 40px;
-    margin: auto;
     background: #efefef;
     clear: both;
     max-width: 100%;
 }
 
-#buttons {
+#buttoms {
     display: block;
     line-height: 40px;
     text-align: center;
