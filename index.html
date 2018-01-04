@@ -10,161 +10,54 @@
   <title>麦滴商城-校园O2O商城</title> 
   <link rel="stylesheet" href="css/index.css" /> 
   <link href="https://cdn.bootcss.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" /> 
- </head>
+ </head> 
  <body> 
-  <div id="headline">
-   <div id="head"> 
-    <div id="head-1">
-     <img src="public/head-1.png" />
+  <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top"> 
+   <div class="container-fluid"> 
+    <div class="navbar-header"> 
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+     <a class="navbar-brand" href="">麦滴商城</a> 
     </div> 
-    <div id="head-2">
-     <div class="addr" id="addrout">
-      请输入您的区域
-     </div> 
-     <div class="AddrBox"> 
-      <div class="addrclose">
-       请选择您所在的区域
-       <a href="javascript:void(0)" title="关闭窗口" class="addrclose_btn">&times;</a>
-      </div> 
-      <div></div> 
-      <div id="addrsub">
-       <a href="" id="addrsubmit">确认</a>
-      </div> 
-     </div> 
-    </div> 
-    <div id="head-3">
-     <div id="usern">
-      Wchuan
-     </div> 
-     <div class="login_Tabs">
-      <!--Tab区-->
-      <div href="javascript:void(0)" title="关闭窗口" class="loginclose_btn">
-       X
-      </div> 
-      <div class="horizontalTab">
-       <ul class="resp-tabs-list"> 
-        <li class="resp-tab-item" aria-controls="tab_item-0" role="tab">
-         <div>
-          <img src="public/top-note.png" alt="" />
-         </div><span>注册</span></li> 
-        <li class="resp-tab-item" aria-controls="tab_item-1" role="tab">
-         <div>
-          <img src="public/top-lock.png" alt="" />
-         </div><span>登录</span></li> 
-        <li class="resp-tab-item" aria-controls="tab_item-2" role="tab">
-         <div>
-          <img src="public/top-key.png" alt="" />
-         </div><span>找回密码</span></li>
-       </ul> 
-       <div class="resp-tabs-container">
-        <!--Container区--> 
-        <div class="resp-tab-content" aria-labelledby="tab_item-0"> 
-         <div class="register"> 
-          <form method="post"> 
-           <div class="rname">
-            <p>昵称</p> 
-            <input type="text" class="text" value="文字、字母、数字、下划线组成" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-           </div> 
-           <div class="rphone">
-            <p>电话号码</p> 
-            <input type="text" class="text" id="phone" value="11位数字组成" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-           </div> 
-           <div class="ricode">
-            <p>验证码</p> 
-            <input type="text" class="text icode" value="4位数字组成" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" /> 
-            <div class="sendicode" onclick="sends.send();">
-             发送验证码
-            </div>
-           </div> 
-           <div class="rpassword">
-            <p>密码</p> 
-            <input type="password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-           </div> 
-           <div class="login-sub"> 
-            <input type="submit" onclick="sends.conform();" href="javascript:;" value="注册" />
-           </div> 
-          </form>
-         </div>
-        </div> 
-        <div class="resp-tab-content" aria-labelledby="tab_item-1"> 
-         <div class="login"> 
-          <form> 
-           <input type="text" class="text" value="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" />
-           <a href="#" class=" icon email"></a> 
-           <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
-           <a href="#" class=" icon lock"></a> 
-           <div style="display:none;">
-            <input type="checkbox" name="checkbox" checked="" value="下次自动登录" />
-           </div> 
-           <div class="login-sub submit-to">
-            <input type="submit" onclick="myFunction()" value="LOG IN" />
-           </div> 
-           <div class="clear"></div> 
-          </form>
-         </div>
-        </div> 
-        <div class="resp-tab-content" aria-labelledby="tab_item-2 item3"> 
-         <div class="findpw"> 
-          <form class="sub"> 
-           <p>请输入您的手机号</p> 
-           <input type="text" value="手机号" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" /> 
-           <div class="login-sub"> 
-            <input type="submit" onclick="myFunction()" value="发送验证码" />
-           </div> 
-          </form>
-         </div>
-        </div> 
-       </div>
-      </div>
-     </div> 
+    <div id="navbar" class="navbar-collapse collapse"> 
+     <ul class="nav navbar-nav"> 
+      <li><a href="#">位置</a></li> 
+     </ul> 
+     <ul class="nav navbar-nav navbar-right"> 
+      <li><a href="">账号</a></li> 
+     </ul> 
     </div>
    </div>
-  </div> 
+  </nav> 
   <div class="investment_f"> 
-   <div class="investment_title"> 
-    <div id="home-1" class="on"></div> 
-    <div id="home-2"></div> 
-    <div id="home-3"></div> 
-   </div> 
    <div class="investment_con"> 
     <div class="investment_con_list"> 
-     <div id="trans"> 
-      <div class="slide_container"> 
-       <ul class="slides" id="slider"> 
-        <li><a href="#"><img src="public/trans-1.png" /></a></li> 
-        <li><a href="#"><img src="public/trans-2.png" /></a></li> 
-        <li><a href="#"><img src="public/trans-3.png" /></a></li> 
-       </ul>
-      </div>
-     </div> 
      <div class="sfilter"> 
       <div class="smenu"> 
-       <div class="on" id="asort" rel="all"></div>
-       <div id="bsort" rel="brestore"></div>
-       <div id="csort" rel="junstore"></div>
-       <div id="dsort" rel="frustore"></div>
-       <div id="esort" rel="dristore"></div>
-       <div id="fsort" rel="dinstore"></div>
-       <div id="gsort" rel="supstore"></div>
-       <div id="hsort" rel="cakstore"></div>
-       <div id="isort" rel="clostore"></div>
-       <div id="jsort" rel="boostore"></div>
-       <div id="ksort" rel="expstore"></div>
-       <div id="lsort" rel="ktvstore"></div>
+       <div class="on" id="asort" rel="all"></div> 
+       <div id="bsort" rel="brestore"></div> 
+       <div id="csort" rel="junstore"></div> 
+       <div id="dsort" rel="frustore"></div> 
+       <div id="esort" rel="dristore"></div> 
+       <div id="fsort" rel="dinstore"></div> 
+       <div id="gsort" rel="supstore"></div> 
+       <div id="hsort" rel="cakstore"></div> 
+       <div id="ksort" rel="expstore"></div> 
+       <div id="lsort" rel="ktvstore"></div> 
       </div> 
       <div id="storepop"> 
        <div class="popinf-close"> 
         <div href="#" ;="" onclick="Lock_CheckForm(this);" class="popinf-close-btn"></div> 
         <div class="popinf-storename">
-         麦庐食堂铺
+          麦庐食堂铺 
         </div> 
-        <div href="#" ;="" class="popinf-close-refresh"></div>
+        <div href="#" ;="" class="popinf-close-refresh"></div> 
        </div> 
-       <div class="store-inf">
-        <div class="store-inf-img"></div>
+       <div class="store-inf"> 
+        <div class="store-inf-img"></div> 
        </div> 
        <div class="gsort"> 
-        <div class="container">
+        <div class="container"> 
          <div> 
           <ul id="filters"> 
            <li><span class="filter active" data-filter="app card icon logo web">全部</span></li> 
@@ -172,112 +65,12 @@
            <li><span class="filter" data-filter="card">卡片</span></li> 
            <li><span class="filter" data-filter="icon">图标</span></li> 
            <li><span class="filter" data-filter="logo">商标</span></li> 
-           <li><span class="filter" data-filter="web">网页</span></li>
-          </ul>
+           <li><span class="filter" data-filter="web">网页</span></li> 
+          </ul> 
          </div> 
-         <div id="portfoliolist"> 
-          <div class="portfolio logo" data-cat="logo"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img5.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Bird Document</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio web" data-cat="web"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img4.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Sonor's Design</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio card" data-cat="card"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img1.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Typography Company</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio app" data-cat="app"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img3.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Weatherette</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio card" data-cat="card"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img4.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">BMF</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio card" data-cat="card"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img5.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Techlion</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio logo" data-cat="logo"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img1.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">KittyPic</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio app" data-cat="app"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img2.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Graph Plotting</a>
-              <a style="float:right;">添加购物车</a>
-             </div>
-            </div>
-           </div>
-          </div> 
-          <div class="portfolio icon" data-cat="icon"> 
-           <div class="portfolio-wrapper">
-            <img src="public/img4.jpg" alt="" /> 
-            <div class="label">
-             <div class="label-text">
-              <a class="text-title">Domino's Pizza</a>
-             </div>
-             <a style="float:right;">添加购物车</a>
-            </div>
-           </div>
-          </div> 
-         </div>
-        </div>
-       </div>
+          
+        </div> 
+       </div> 
       </div> 
       <div class="sitem"> 
        <div rel="brestore" onclick="locking()"> 
@@ -293,7 +86,7 @@
         <a><img src="public/stores_wuzhihou.png" /></a> 
        </div> 
        <div rel="dinstore" onclick="locking()"> 
-        <a><img src="public/stores_mailucanteentwo.png" /></a>
+        <a><img src="public/stores_mailucanteentwo.png" /></a> 
        </div> 
        <div rel="expstore" onclick="locking()"> 
         <a><img src="public/stores_express.png" /></a> 
@@ -306,14 +99,14 @@
        </div> 
        <div rel="junstore" onclick="locking()"> 
         <a><img src="public/stores_dessert.png" /></a> 
-       </div>
+       </div> 
       </div> 
-     </div>
+     </div> 
     </div> 
     <div class="investment_con_list"> 
      <div class="gwc" style=" margin:auto;"> 
-      <table cellpadding="0" cellspacing="0" class="gwc_tb2">
-       <tbody>
+      <table cellpadding="0" cellspacing="0" class="gwc_tb2"> 
+       <tbody> 
         <tr> 
          <td class="tb2_td1"><input type="checkbox" value="1" name="newslist" id="newslist-1" checked="checked" /></td> 
          <td class="tb2_td2"><a href="#"><img src="public/img1.jpg" /></a></td> 
@@ -321,12 +114,12 @@
          <td class="tb1_td4">一件</td> 
          <td class="tb1_td5"> <input id="min1" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="-" /> <input id="text_box1" name="" type="text" value="1" style=" width:30px; text-align:center; border:1px solid #ccc;" /> <input id="add1" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="+" /></td> 
          <td class="tb1_td6"><label id="total1" class="tot" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></td> 
-         <td class="tb1_td7"><a href="#">删除</a></td>
+         <td class="tb1_td7"><a href="#">删除</a></td> 
         </tr> 
-       </tbody>
+       </tbody> 
       </table> 
-      <table cellpadding="0" cellspacing="0" class="gwc_tb2">
-       <tbody>
+      <table cellpadding="0" cellspacing="0" class="gwc_tb2"> 
+       <tbody> 
         <tr> 
          <td class="tb2_td1"><input type="checkbox" value="1" name="newslist" id="newslist-2" checked="checked" /></td> 
          <td class="tb2_td2"><a href="#"><img src="public/img2.jpg" /></a></td> 
@@ -334,107 +127,82 @@
          <td class="tb1_td4">一件</td> 
          <td class="tb1_td5"> <input id="min2" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="-" /> <input id="text_box2" name="" type="text" value="1" style=" width:30px; text-align:center; border:1px solid #ccc;" /> <input id="add2" name="" style=" width:20px; height:18px;border:1px solid #ccc;" type="button" value="+" /></td> 
          <td class="tb1_td6"><label id="total2" class="tot" style="color:#ff5500;font-size:14px; font-weight:bold;"></label></td> 
-         <td class="tb1_td7"><a href="#">删除</a></td>
-        </tr>
-       </tbody>
+         <td class="tb1_td7"><a href="#">删除</a></td> 
+        </tr> 
+       </tbody> 
       </table> 
-      <table cellpadding="0" cellspacing="0" class="gwc_tb3">
-       <tbody>
+      <table cellpadding="0" cellspacing="0" class="gwc_tb3"> 
+       <tbody> 
         <tr> 
          <td class="tb1_td1"><input id="Checkbox1" type="checkbox" name="newlist" class="allselect" checked="checked" /></td> 
          <td class="tb1_td1">全选</td> 
          <td class="tb3_td1">&nbsp;</td> 
          <td class="tb3_td2">已选商品 <label id="shuliang" style="color:#ff5500;font-size:14px; font-weight:bold;">0</label> 件</td> 
          <td class="tb3_td3">合计(不含运费):<span>￥</span><span style=" color:#ff5500;"><label id="zong1" style="color:#ff5500;font-size:14px; font-weight:bold;">0.00</label></span></td> 
-         <td class="tb3_td4"><span id="jz1">结算</span><a href="#" id="jz2">结算</a></td>
-        </tr>
-       </tbody>
-      </table>
+         <td class="tb3_td4"><span id="jz1">结算</span><a href="#" id="jz2">结算</a></td> 
+        </tr> 
+       </tbody> 
+      </table> 
      </div> 
     </div> 
     <div class="investment_con_list"> 
-     <div class="count_inf">
-      <div class="count_inf_img"></div>
+     <div class="count_inf"> 
+      <div class="count_inf_img"></div> 
      </div> 
      <div class="count_control"> 
       <div class="control_block">
-       待付
-      </div>
-      <div class="control_block">
-       待发
-      </div>
-      <div class="control_block">
-       待收
-      </div>
-      <div class="control_block">
-       待评
+        待付 
       </div> 
       <div class="control_block">
-       全部订单
-      </div>
-      <div class="control_block">
-       收藏
-      </div>
-      <div class="control_block">
-       售后服务
-      </div>
-      <div class="control_block">
-       使用帮助
+        待发 
       </div> 
       <div class="control_block">
-       待定
-      </div>
+        待收 
+      </div> 
       <div class="control_block">
-       待定
-      </div>
+        待评 
+      </div> 
+      <div class="control_block">
+        全部订单 
+      </div> 
+      <div class="control_block">
+        收藏 
+      </div> 
+      <div class="control_block">
+        售后服务 
+      </div> 
+      <div class="control_block">
+        使用帮助 
+      </div> 
+      <div class="control_block">
+        待定 
+      </div> 
+      <div class="control_block">
+        待定 
+      </div> 
      </div> 
     </div> 
-   </div>
-  </div> 
-  <div id="article"> 
-   <div class="articles">
-    <div class="headline">
-     商业合作
-    </div>
-    <div class="circle">
-     加盟入驻
-    </div>
-    <div class="circle">
-     人才招聘
-    </div>
    </div> 
-   <div class="articles">
-    <div class="headline">
-     客户服务
+</div>  
+  <!--<div id="buttom"> 
+   <span id="buttoms">&copy; 2015 赣ICP备15002497号 </span> 
+  </div> -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+  	<div class="footer_bar_flex">
+    <div id="home-1" class="on"></div> 
+    <div id="home-2"></div> 
+    <div id="home-3"></div>
     </div>
-    <div class="circle">
-     售后服务
-    </div>
-    <div class="circle">
-     如何购买
-    </div>
-   </div> 
-   <div class="articles">
-    <div class="headline">
-     关于麦滴
-    </div>
-    <div class="circle">
-     麦滴团队
-    </div>
-    <div class="circle">
-     联系我们
-    </div>
-   </div> 
-  </div> 
-  <div id="button"> 
-   <span id="buttons">CopyRight. 2014-2015 MaiDi NetWork Technology Co.,Ltd. 赣ICP备15002497号 All Rights Reserved.</span> 
-  </div>  
+  </div>
+  </nav>
+  </div>
   <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script> 
   <script src="https://cdn.bootcss.com/jquery-easing/1.3/jquery.easing.min.js"></script> 
   <script src="https://cdn.bootcss.com/mixitup/1.5.6/jquery.mixitup.min.js"></script> 
   <script src="https://cdn.bootcss.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> 
-  <script src="https://cdn.bootcss.com/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script>
+  <script src="https://cdn.bootcss.com/ResponsiveSlides.js/1.55/responsiveslides.min.js"></script> 
   <script src="js/common.js" type="text/javascript"></script> 
-  <script src="js/ShoppingCart.js"></script>
+  <script src="js/ShoppingCart.js"></script>  
  </body>
 </html>
